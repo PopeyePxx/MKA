@@ -5,7 +5,7 @@ from PIL import Image
 import cv2
 import torch
 import numpy as np
-from save_models.scale_factor123.keypoint_vcr_fuse_clip_sla_sam import Net as model
+from models.keypoint import Net as model
 from utils.viz import viz_pred_test_kp
 from utils.util import set_seed, process_gt, normalize_map
 from sklearn.metrics import precision_score, recall_score
@@ -13,8 +13,8 @@ from utils.evaluation import cal_kl, cal_sim, cal_nss
 import re
 parser = argparse.ArgumentParser()
 ##  path
-parser.add_argument('--data_root', type=str, default='/data1/yf/yinshi/')
-parser.add_argument('--model_file', type=str, default= '/home/yf/funcgra/save_models/scale_factor123/best_aff_model_19_3.722_0.352_1.175.pth')
+parser.add_argument('--data_root', type=str, default='/')
+parser.add_argument('--model_file', type=str, default= '/.pth')
 parser.add_argument('--save_path', type=str, default='./save_preds')
 parser.add_argument("--divide", type=str, default="Seen")
 ##  image
