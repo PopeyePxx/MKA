@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Multi-Keypoint Affordance Representation for Functional Dexterous Grasping(MKA)
 https://github.com/user-attachments/assets/718f2f3b-1881-4941-a387-144d9fba47e6
 ## Usage
@@ -36,3 +37,6 @@ python robot_control_hold_the_kettle.py
 
 
 
+=======
+# MKA
+>>>>>>> 06282040c8a985bee3228de0201f55880af1ed80
