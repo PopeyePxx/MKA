@@ -7,7 +7,7 @@ https://github.com/user-attachments/assets/718f2f3b-1881-4941-a387-144d9fba47e6
 Code is tested under Pytorch 1.12.1, python 3.7, and CUDA 11.6
 
 ```
-pip install -r requirements.txt
+pip install -r funcgra/requirements.txt
 ```
 
 #### 2. Dataset
@@ -16,7 +16,7 @@ You can download the FAH from [Baidu Pan (3.23G)](https://pan.baidu.com/s/1zUNe_
 
 #### 3. Train
 
-Run following commands to start training or testing:
+Run following commands to start training:
 
 ```
 python train.py --data_root <PATH_TO_DATA>
