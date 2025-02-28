@@ -48,7 +48,7 @@ def parse_args(args=None):
     ##  path
     parser.add_argument('--data_root', type=str, default='/data1/yf/test_vis/')
     parser.add_argument('--model_file', type=str,
-                        default='E:/shiyan/best_aff_model_3_5.409_0.308_0.849.pth')
+                        default='/ .pth')
     parser.add_argument('--save_path', type=str, default='./save_preds')
     parser.add_argument("--divide", type=str, default="Seen")
     ##  image
