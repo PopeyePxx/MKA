@@ -6,7 +6,7 @@ import logging
 import argparse
 import torch
 import torch.nn as nn
-from models.keypoint_vcr_fuse_clip_sla_sam import Net as model  # yf
+from models.keypoint import Net as model  # yf
 from utils.evaluation import cal_kl, cal_sim, cal_nss
 from utils.viz import viz_pred_test
 from utils.util import set_seed, process_gt, normalize_map, get_optimizer
@@ -16,8 +16,8 @@ import cv2
 
 parser = argparse.ArgumentParser()
 ##  path
-parser.add_argument('--data_root', type=str, default='/data1/yf/yinshi/')
-parser.add_argument('--model_file', type=str, default='/home/yf/code/funcgra/save_models/20241112_152401/aff_model_epoch_1.pth')
+parser.add_argument('--data_root', type=str, default='/')
+parser.add_argument('--model_file', type=str, default='/.pth')
 parser.add_argument('--save_root', type=str, default='save_models')
 parser.add_argument("--divide", type=str, default="Seen")
 ##  image
@@ -28,7 +28,7 @@ parser.add_argument('--num_workers', type=int, default=1)
 ##  train
 parser.add_argument('--batch_size', type=int, default=16)
 parser.add_argument('--warm_epoch', type=int, default=0)
-parser.add_argument('--epochs', type=int, default=30)
+parser.add_argument('--epochs', type=int, default=10)
 parser.add_argument('--lr', type=float, default=0.001)
 parser.add_argument('--momentum', type=float, default=0.9)
 parser.add_argument('--weight_decay', type=float, default=5e-4)
