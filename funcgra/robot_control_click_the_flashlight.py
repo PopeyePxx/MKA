@@ -46,9 +46,9 @@ def get_aligned_images():
 def parse_args(args=None):
     parser = argparse.ArgumentParser()
     ##  path
-    parser.add_argument('--data_root', type=str, default='/data1/yf/test_vis/')
+    parser.add_argument('--data_root', type=str, default='//')
     parser.add_argument('--model_file', type=str,
-                        default='E:/shiyan/best_aff_model_3_5.409_0.308_0.849.pth')
+                        default='/.pth')
     parser.add_argument('--save_path', type=str, default='./save_preds')
     parser.add_argument("--divide", type=str, default="Seen")
     ##  image
@@ -381,8 +381,6 @@ if __name__ == "__main__":
     # 直接利用测量好的物体一开始对应的位置算出手与末端之间的变换矩阵
     rotation_E_H_liang = np.dot(rotation_E_I_liang, rotation_I_O_liang)
 
-
-
     # ------------------用相机求解物体上关键点对应的在基座坐标系下的坐标-------
     args = parse_args()
     model = model(aff_classes=6)
@@ -546,10 +544,6 @@ if __name__ == "__main__":
     # flashlightshouwan_true_global = tuple([489.21, 261.93, 421.9])
     # flashlightshouwan_true_global = np.array(flashlightshouwan_true_global)   489.21  261.93  421.9
 
-
-
-
-
     # #------------------------------------建立物体坐标系--------------------------
     # 两个基轴
     origin_o_x = flashlightfun_global - flashlightshouwan_true_global
@@ -566,10 +560,7 @@ if __name__ == "__main__":
 
     # 建立I系与O系之间的旋转矩阵 R I <-O
     rotation_I_O = np.column_stack((normalized_o_x, final_o_y, normalized_o_z))
-
-
-    #
-    #
+   
     # #手腕关键点
     # hand_position_w = tuple([float(pose[0]),float(pose[1]),float(pose[2])])
     # hand_position_w = np.array(hand_position_w)
@@ -602,8 +593,6 @@ if __name__ == "__main__":
     #
     # #建立I系与H系之间的旋转矩阵 R I<-H
     # rotation_I_H = np.column_stack((normalized_h_x,final_h_y,normalized_h_z))
-
-
 
     # #利用R I<-O R E<-H求解当手部关键点与物体上对应关键点重合的时候的R I <- E
     rotation_H_E_liang = rotation_E_H_liang.T
