@@ -19,7 +19,7 @@ You can download the FAH from [Baidu Pan (3.23G)](https://pan.baidu.com/s/1zUNe_
 Run following commands to start training or testing:
 
 ```
-python train_gaaf.py --data_root <PATH_TO_DATA>
+python train.py --data_root <PATH_TO_DATA>
 ```
 ####4.
 You can download the pretrained modles [Baidu Pan)](https://pan.baidu.com/s/1CR7wgkjcSmm8iOWdfcbw1w?pwd=9kry). The extraction code is: `9kry`.
