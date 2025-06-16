@@ -1,5 +1,5 @@
 # Multi-Keypoint Affordance Representation for Functional Dexterous Grasping (MKA)
-https://github.com/user-attachments/assets/b5c200ba-0155-408b-9c6d-e84d1156f59e
+https://github.com/user-attachments/assets/bd6bc92e-1672-4215-aac7-2d0683161c39
 ## Usage
 ### Affordance (CMKA)
 #### 1. Requirements
