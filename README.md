@@ -12,7 +12,7 @@ pip install -r funcgra/requirements.txt
 
 #### 2. Dataset
 
-You can download the FAH from [Baidu Pan (3.23G)](https://pan.baidu.com/s/1zUNe_SFPG5Ggp0ejQPXi0Q?pwd=z4a). The extraction code is: `z4am`.
+You can download the FAH from [Baidu Pan (3.35G)](https://pan.baidu.com/s/1Naf9GirbG1mB9cSSxc6N_w?pwd=a6nv). The extraction code is: `a6nv`.
 
 #### 3. Train
 
@@ -22,7 +22,7 @@ Run following commands to start training:
 python train.py --data_root <PATH_TO_DATA>
 ```
 ####4.
-You can download the pretrained modles [Baidu Pan)](https://pan.baidu.com/s/1CR7wgkjcSmm8iOWdfcbw1w?pwd=9kry). The extraction code is: `9kry`.
+You can download the pretrained modles [Baidu Pan)](https://pan.baidu.com/s/1vdKDS4yvaody056UUy1VAA?pwd=8qvk). The extraction code is: `8qvk`.
 
 ### Simulation (KGT)
 #### 1. Requirements
