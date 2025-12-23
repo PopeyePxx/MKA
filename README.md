@@ -9,7 +9,7 @@ Code is tested under Pytorch 1.12.1, python 3.7, and CUDA 11.6
 ```
 pip install -r funcgra/requirements.txt
 ```
-
+You can download the sam_vit modles [Baidu Pan)](https://pan.baidu.com/s/16zwHbANn3mEhtdji2vZE9Q?pwd=ca8a). The extraction code is: `ca8a`.
 #### 2. Dataset
 
 You can download the FAH from [Baidu Pan (3.35G)](https://pan.baidu.com/s/1Naf9GirbG1mB9cSSxc6N_w?pwd=a6nv). The extraction code is: `a6nv`.
